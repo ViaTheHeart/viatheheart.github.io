@@ -18,4 +18,8 @@ magin:0 ;
     padding: 20px;
     box-size:24px;
   }
-  
+
+  .sidebar h2 {
+    margin-top: 0;
+    font-size: 24px'
+  }
