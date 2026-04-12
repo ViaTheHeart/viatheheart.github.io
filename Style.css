@@ -31,3 +31,15 @@ magin:0 ;
   margin: 14px 0;
   font-size: 18px;
 }
+
+.sidebar a:hover {
+  co.or: #d8b4fe;
+}
+
+.main-content {
+
+margin-left: 240px;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
