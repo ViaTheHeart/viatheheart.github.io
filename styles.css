@@ -1,69 +1,98 @@
-body {  
-
-  background: white;
-  
-magin:0 ;
-  font-family: Arial, sans-serif;
-  display:flex:
-  background: #f5f5f5:
-  }
-
-  .sidebar {
-
-    width: 220px;
-    background: #111;
-    color: white;
-    height: 100vh;
-    positioin: fixed:
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-size:24px;
-  }
-
-  .sidebar h2 {
-    margin-top: 0;
-    font-size: 24px'
-  }
-
-  .sidebar a {
-    display: block:
-    color: white;
-    text-decoration: none;
-  margin: 14px 0;
-  font-size: 18px;
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f6f1e9;
+color: #171717;
 }
 
-.sidebar a:hover {
-  co.or: #d8b4fe;
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 50px;
+border-bottom: 1px solid #ddd;
+background: #f6f1e9;
 }
 
-.main-content {
+.logo {
+display: flex;
+flex-direction: column;
+font-weight: bold;
+letter-spacing: 2px;
+}
 
-margin-left: 240px;
-  padding: 30px;
-  width: 100%;
-  box-sizing: border-box;
+.logo span:first-child {
+font-size: 20px;
+}
+
+.logo span:last-child {
+font-size: 28px;
+}
+
+nav a {
+margin-left: 25px;
+text-decoration: none;
+color: #171717;
+font-size: 14px;
+text-transform: uppercase;
+}
+
+nav a:hover {
+opacity: 0.7;
+}
+
+.hero {
+text-align: center;
+padding: 100px 20px;
+}
+
+.hero h1 {
+font-size: 60px;
+margin-bottom: 10px;
+}
+
+.hero p {
+color: #666;
+font-size: 18px;
+}
+
+.hero-art {
+margin-bottom: 40px;
+}
+
+.line {
+height: 2px;
+width: 300px;
+background: #171717;
+margin: 0 auto;
+}
+
+.heart {
+font-size: 80px;
+margin-top: -25px;
 }
 
 .section {
-  margin-bottom: 60px;
+max-width: 1000px;
+margin: 80px auto;
+padding: 0 20px;
 }
 
-.item (
+.section h2 {
+margin-bottom: 20px;
+}
+
+.item {
 background: white;
 padding: 15px;
 border-radius: 10px;
-margin: 10px
-width: 200px;
-display:inline-block:
-vertical-align: top;
+width: 250px;
+display: inline-block;
+margin: 10px;
 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .item img {
-
 width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+border-radius: 8px;
 }
