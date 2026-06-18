@@ -56,22 +56,6 @@ color: #666;
 font-size: 18px;
 }
 
-.hero-art {
-margin-bottom: 40px;
-}
-
-.line {
-height: 2px;
-width: 300px;
-background: #171717;
-margin: 0 auto;
-}
-
-.heart {
-font-size: 80px;
-margin-top: -25px;
-}
-
 .section {
 max-width: 1000px;
 margin: 80px auto;
@@ -95,4 +79,19 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 .item img {
 width: 100%;
 border-radius: 8px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1400px;
+  display: block;
+  margin: 40px auto 10px auto;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  letter-spacing: 2px;
 }
