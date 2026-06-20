@@ -45,28 +45,40 @@ body {
 
 nav {
   display: none;
-  margin-top: 10px;
 }
 
 nav.open {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  background: #efe5d6;
+  padding: 22px 38px;
+  margin: 10px -38px 0;
+  border-top: 1px solid rgba(36, 27, 20, 0.15);
+  border-bottom: 1px solid rgba(36, 27, 20, 0.15);
 }
 
 nav a {
   text-decoration: none;
   color: #241b14;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
+
+
 
 /* BANNER */
 
 .header-banner {
   margin: -45px 0 0 0;
-  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav.open {
+  position: relative;
+  z-index: 5;
 }
 
 .header-banner-image {
