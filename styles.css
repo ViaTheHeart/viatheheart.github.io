@@ -158,4 +158,40 @@ main {
   .item {
     width: calc(100% - 30px);
   }
+
+  .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #241b14;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin-left: 0;
+  }
+ }
 }
