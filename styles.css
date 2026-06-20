@@ -194,4 +194,27 @@ main {
     margin-left: 0;
   }
  }
+
+  .featured-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 15px;
+}
+
+.featured-slider img {
+  flex: 0 0 85%;
+  max-width: 85%;
+  scroll-snap-align: center;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(36, 27, 20, 0.15);
+}
+
+@media (min-width: 700px) {
+  .featured-slider img {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+}
 }
