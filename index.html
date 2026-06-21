@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Via the Heart</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
 <header class="site-header">
-
   <div class="header-top">
     <a href="index.html">
-      <img src="Images/Logo/via-the-heart-logo.png" alt="Via the Heart" class="logo-image">
+      <img src="images/logo/via-the-heart-logo.png" alt="Via the Heart" class="logo-image">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -22,18 +21,18 @@
   <nav id="site-nav">
     <a href="#about">About</a>
     <a href="#featured">Featured</a>
-    <a href="Pages/paintings.html">Paintings</a>
-    <a href="#crochet">Crochet</a>
+    <a href="pages/paintings.html">Paintings</a>
+    <a href="pages/crochet.html">Crochet</a>
+    <a href="pages/prints.html">3D Prints</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <div class="header-banner">
     <picture>
-      <source media="(max-width: 600px)" srcset="Images/Banner/Hero-banner.png">
-      <img src="Images/Banner/Hero-banner.png" alt="Via the Heart banner" class="header-banner-image">
+      <source media="(max-width: 600px)" srcset="images/banner/hero-banner-mobile.png">
+      <img src="images/banner/hero-banner.png" alt="Via the Heart banner" class="header-banner-image">
     </picture>
   </div>
-
 </header>
 
 <main>
@@ -41,50 +40,45 @@
   <section id="about" class="section intro-section">
     <h2>About Via the Heart</h2>
     <p>
-      Via the Heart brings together original artwork and handcrafted creations
-      from passionate makers and artists. From paintings and drawings to crochet. Every piece is created with
-      creativity, craftsmanship, and love.
-    </p>
-    <p>
-      Many items are available for purchase, and custom commissions may be available.
-      Contact us to learn more.
+      Via the Heart brings together original artwork and handcrafted creations from passionate makers and artists.
+      Every piece is created with creativity, craftsmanship, and heart.
     </p>
   </section>
 
   <section id="featured" class="section">
     <div class="section-header">
       <h2>Featured Work</h2>
-      <a href="Pages/paintings.html" class="view-all">View All →</a>
+      <a href="pages/paintings.html" class="view-all">View All →</a>
     </div>
 
-    <div class="gallery-grid">
+    <div class="horizontal-scroll">
 
       <article class="art-card">
-        <a href="paintings/moonlitlake.html">
-          <img src="Pages/Paintings/MoonlitLake.jpg" alt="Moonlit Lake">
+        <a href="artwork/paintings/moonlit-lake.html">
+          <img src="images/paintings/moonlit-lake/main.jpg" alt="Moonlit Lake">
           <div class="art-info">
             <h3>Moonlit Lake</h3>
-            <p>By Bob Via </p>
+            <p>Original Painting</p>
           </div>
         </a>
       </article>
 
       <article class="art-card">
-        <a href="paintings/beachOoceanWave.html">
-          <img src="Pages/Paintings/BeachOceanWave.jpg" alt="Beach Ocean Wave">
+        <a href="artwork/paintings/beach-ocean-wave.html">
+          <img src="images/paintings/beach-ocean-wave/main.jpg" alt="Beach Ocean Wave">
           <div class="art-info">
             <h3>Beach Ocean Wave</h3>
-            <p>By Bob Via</p>
+            <p>Original Painting</p>
           </div>
         </a>
       </article>
 
       <article class="art-card">
-        <a href="paintings/dog.html">
-          <img src="Pages/Paintings/Dog.jpg" alt="Dog Portrait">
+        <a href="artwork/paintings/dog-portrait.html">
+          <img src="images/paintings/dog-portrait/main.jpg" alt="Dog Portrait">
           <div class="art-info">
             <h3>Dog Portrait</h3>
-            <p>By Allison Via</p>
+            <p>Commission Work</p>
           </div>
         </a>
       </article>
@@ -93,13 +87,57 @@
   </section>
 
   <section id="collections" class="section">
-    <h2>Browse Collections</h2>
+    <div class="section-header">
+      <h2>Browse Collections</h2>
+    </div>
 
-    <div class="collection-grid">
-      <a href="Pages/paintings.html">Paintings</a>
-      <a href="#crochet">Crochet</a>
-      <a href="#leather">Leather</a>
-      <a href="#woodwork">Woodwork</a>
+    <div class="horizontal-scroll collection-scroll">
+      <a href="pages/paintings.html" class="collection-card">Paintings</a>
+      <a href="pages/crochet.html" class="collection-card">Crochet</a>
+      <a href="pages/prints.html" class="collection-card">3D Prints</a>
+      <a href="pages/leather.html" class="collection-card">Leather</a>
+      <a href="pages/woodwork.html" class="collection-card">Woodwork</a>
+    </div>
+  </section>
+
+  <section id="paintings" class="section">
+    <div class="section-header">
+      <h2>Paintings</h2>
+      <a href="pages/paintings.html" class="view-all">View All →</a>
+    </div>
+
+    <div class="horizontal-scroll">
+
+      <article class="art-card">
+        <a href="artwork/paintings/moonlit-lake.html">
+          <img src="images/paintings/moonlit-lake/main.jpg" alt="Moonlit Lake">
+          <div class="art-info">
+            <h3>Moonlit Lake</h3>
+            <p>Original Painting</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="art-card">
+        <a href="artwork/paintings/beach-ocean-wave.html">
+          <img src="images/paintings/beach-ocean-wave/main.jpg" alt="Beach Ocean Wave">
+          <div class="art-info">
+            <h3>Beach Ocean Wave</h3>
+            <p>Original Painting</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="art-card">
+        <a href="artwork/paintings/dog-portrait.html">
+          <img src="images/paintings/dog-portrait/main.jpg" alt="Dog Portrait">
+          <div class="art-info">
+            <h3>Dog Portrait</h3>
+            <p>Commission Work</p>
+          </div>
+        </a>
+      </article>
+
     </div>
   </section>
 
