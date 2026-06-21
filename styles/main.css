@@ -1,1 +1,279 @@
+/* ===================================
+   GLOBAL
+=================================== */
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f0e6;
+    color: #241b14;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.site-header {
+    background: #efe5d6;
+    padding: 8px 38px 0;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+}
+
+.logo-image {
+    width: 300px;
+    max-width: 80%;
+    height: auto;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #241b14;
+    font-size: 54px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+#site-nav {
+    display: none;
+}
+
+#site-nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+#site-nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ===================================
+   BANNER
+=================================== */
+
+.header-banner {
+    margin-top: -45px;
+}
+
+.header-banner-image {
+    width: 100%;
+    height: auto;
+}
+
+/* ===================================
+   MAIN
+=================================== */
+
+main {
+    padding-top: 20px;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    padding: 0 38px;
+}
+
+.section h2 {
+    margin: 0 0 20px;
+    font-size: 38px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ===================================
+   SECTION HEADERS
+=================================== */
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.view-all {
+    font-weight: bold;
+}
+
+/* ===================================
+   HORIZONTAL SCROLL
+=================================== */
+
+.horizontal-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(36, 27, 20, 0.25);
+    border-radius: 999px;
+}
+
+/* ===================================
+   ART CARDS
+=================================== */
+
+.art-card {
+    flex: 0 0 85%;
+    background: #fffaf2;
+    border-radius: 16px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 14px rgba(36, 27, 20, 0.12);
+    transition: transform 0.25s ease;
+}
+
+.art-card:hover {
+    transform: translateY(-4px);
+}
+
+.art-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.art-info {
+    padding: 18px;
+}
+
+.art-info h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.art-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #6b5b4c;
+}
+
+/* ===================================
+   COLLECTION CARDS
+=================================== */
+
+.collection-card {
+    flex: 0 0 70%;
+    min-height: 120px;
+    background: #fffaf2;
+    border-radius: 16px;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 14px rgba(36, 27, 20, 0.10);
+}
+
+/* ===================================
+   CONTACT
+=================================== */
+
+#contact {
+    padding-bottom: 50px;
+}
+
+/* ===================================
+   DESKTOP
+=================================== */
+
+@media (min-width: 768px) {
+
+    .site-header {
+        padding: 18px 60px 0;
+    }
+
+    .logo-image {
+        width: 360px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    #site-nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        margin-top: 15px;
+    }
+
+    .header-banner {
+        margin-top: -20px;
+    }
+
+    .art-card {
+        flex: 0 0 30%;
+    }
+
+    .collection-card {
+        flex: 0 0 22%;
+    }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 767px) {
+
+    .section {
+        padding: 0 24px;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .art-card {
+        flex: 0 0 88%;
+    }
+
+    .collection-card {
+        flex: 0 0 80%;
+    }
+}
