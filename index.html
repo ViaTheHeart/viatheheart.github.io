@@ -1,158 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Via the Heart</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via the Heart</title>
+
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
 <header class="site-header">
-  <div class="header-top">
-    <a href="index.html">
-      <img src="images/logo/via-the-heart-logo.png" alt="Via the Heart" class="logo-image">
-    </a>
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  </div>
+    <div class="header-top">
 
-  <nav id="site-nav">
-    <a href="#about">About</a>
-    <a href="#featured">Featured</a>
-    <a href="pages/paintings.html">Paintings</a>
-    <a href="pages/crochet.html">Crochet</a>
-    <a href="#contact">Contact</a>
-  </nav>
+        <a href="index.html" class="logo-link">
+            <img
+                src="images/logo/via-the-heart-logo.png"
+                alt="Via the Heart"
+                class="logo-image">
+        </a>
 
-  <div class="header-banner">
-    <picture>
-      <source media="(max-width: 600px)" srcset="images/banner/hero-banner.png">
-      <img src="images/banner/hero-banner.png" alt="Via the Heart banner" class="header-banner-image">
-    </picture>
-  </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </div>
+
+    <nav id="site-nav">
+
+        <a href="#about">About</a>
+        <a href="pages/paintings.html">Paintings</a>
+        <a href="pages/crochet.html">Crochet</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <div class="header-banner">
+
+        <img
+            src="images/banner/hero-banner.png"
+            alt="Via the Heart Banner"
+            class="header-banner-image">
+
+    </div>
+
 </header>
 
 <main>
 
-  <section id="about" class="section intro-section">
-    <h2>About Via the Heart</h2>
-    <p>
-      Via the Heart brings together original artwork and handcrafted creations from passionate makers and artists.
-      Every piece is created with creativity, craftsmanship, and heart.
-    </p>
-  </section>
+    <section id="about" class="section">
 
-  <section id="featured" class="section">
-    <div class="section-header">
-      <h2>Featured Work</h2>
-      <a href="pages/paintings.html" class="view-all">View All →</a>
-    </div>
+        <h2>About Via the Heart</h2>
 
-    <div class="horizontal-scroll">
+        <p>
+            Via the Heart showcases original artwork and handcrafted creations from talented artists and makers.
+            Explore paintings, crochet, woodwork, leathercraft, 3D prints, and more.
+        </p>
 
-      <article class="art-card">
-        <a href="artwork/paintings/moonlit-lake.html">
-          <img src="images/paintings/moonlit-lake/main.jpg" alt="Moonlit Lake">
-          <div class="art-info">
-            <h3>Moonlit Lake</h3>
-            <p>Original Painting</p>
-          </div>
-        </a>
-      </article>
+    </section>
 
-      <article class="art-card">
-        <a href="artwork/paintings/beach-ocean-wave.html">
-          <img src="images/paintings/beach-ocean-wave/main.jpg" alt="Beach Ocean Wave">
-          <div class="art-info">
-            <h3>Beach Ocean Wave</h3>
-            <p>Original Painting</p>
-          </div>
-        </a>
-      </article>
+    <section id="featured" class="section">
 
-      <article class="art-card">
-        <a href="artwork/paintings/dog-portrait.html">
-          <img src="images/paintings/dog-portrait/main.jpg" alt="Dog Portrait">
-          <div class="art-info">
-            <h3>Dog Portrait</h3>
-            <p>Commission Work</p>
-          </div>
-        </a>
-      </article>
+        <div class="section-header">
 
-    </div>
-  </section>
+            <h2>Featured Work</h2>
 
-  <section id="collections" class="section">
-    <div class="section-header">
-      <h2>Browse Collections</h2>
-    </div>
+            <a href="pages/paintings.html" class="view-all">
+                View All →
+            </a>
 
-    <div class="horizontal-scroll collection-scroll">
-      <a href="pages/paintings.html" class="collection-card">Paintings</a>
-      <a href="pages/crochet.html" class="collection-card">Crochet</a>
-      <a href="pages/prints.html" class="collection-card">3D Prints</a>
-      <a href="pages/leather.html" class="collection-card">Leather</a>
-      <a href="pages/woodwork.html" class="collection-card">Woodwork</a>
-    </div>
-  </section>
+        </div>
 
-  <section id="paintings" class="section">
-    <div class="section-header">
-      <h2>Paintings</h2>
-      <a href="pages/paintings.html" class="view-all">View All →</a>
-    </div>
+        <div class="horizontal-scroll">
 
-    <div class="horizontal-scroll">
+            <article class="art-card">
 
-      <article class="art-card">
-        <a href="artwork/paintings/moonlit-lake.html">
-          <img src="images/paintings/moonlit-lake/main.jpg" alt="Moonlit Lake">
-          <div class="art-info">
-            <h3>Moonlit Lake</h3>
-            <p>Original Painting</p>
-          </div>
-        </a>
-      </article>
+                <a href="artwork/paintings/moonlit-lake.html">
 
-      <article class="art-card">
-        <a href="artwork/paintings/beach-ocean-wave.html">
-          <img src="images/paintings/beach-ocean-wave/main.jpg" alt="Beach Ocean Wave">
-          <div class="art-info">
-            <h3>Beach Ocean Wave</h3>
-            <p>Original Painting</p>
-          </div>
-        </a>
-      </article>
+                    <img
+                        src="images/paintings/moonlit-lake.jpg"
+                        alt="Moonlit Lake">
 
-      <article class="art-card">
-        <a href="artwork/paintings/dog-portrait.html">
-          <img src="images/paintings/dog-portrait/main.jpg" alt="Dog Portrait">
-          <div class="art-info">
-            <h3>Dog Portrait</h3>
-            <p>Commission Work</p>
-          </div>
-        </a>
-      </article>
+                    <div class="art-info">
+                        <h3>Moonlit Lake</h3>
+                        <p>Original Painting</p>
+                    </div>
 
-    </div>
-  </section>
+                </a>
 
-  <section id="contact" class="section contact-section">
-    <h2>Contact</h2>
-    <p>Interested in purchasing a piece or requesting custom work?</p>
-    <p>Email: exampleemail@gmail.com</p>
-  </section>
+            </article>
+
+            <article class="art-card">
+
+                <a href="artwork/paintings/dog-portrait.html">
+
+                    <img
+                        src="images/paintings/dog-portrait.jpg"
+                        alt="Dog Portrait">
+
+                    <div class="art-info">
+                        <h3>Dog Portrait</h3>
+                        <p>Commission Portrait</p>
+                    </div>
+
+                </a>
+
+            </article>
+
+            <article class="art-card">
+
+                <a href="artwork/paintings/beach-ocean-wave.html">
+
+                    <img
+                        src="images/paintings/beach-ocean-wave.jpg"
+                        alt="Beach Ocean Wave">
+
+                    <div class="art-info">
+                        <h3>Beach Ocean Wave</h3>
+                        <p>Original Painting</p>
+                    </div>
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="collections" class="section">
+
+        <div class="section-header">
+            <h2>Browse Collections</h2>
+        </div>
+
+        <div class="horizontal-scroll">
+
+            <a href="pages/paintings.html" class="collection-card">
+                Paintings
+            </a>
+
+            <a href="pages/crochet.html" class="collection-card">
+                Crochet
+            </a>
+
+            <a href="pages/prints.html" class="collection-card">
+                3D Prints
+            </a>
+
+            <a href="pages/leather.html" class="collection-card">
+                Leather
+            </a>
+
+            <a href="pages/woodwork.html" class="collection-card">
+                Woodwork
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="section">
+
+        <h2>Contact</h2>
+
+        <p>
+            Interested in purchasing a piece or discussing custom work?
+        </p>
+
+        <p>
+            Contact us for availability, commissions, and pricing information.
+        </p>
+
+    </section>
 
 </main>
 
-<script>
-  function toggleMenu() {
-    document.getElementById("site-nav").classList.toggle("open");
-  }
-</script>
+<script src="scripts/main.js"></script>
 
 </body>
 </html>
